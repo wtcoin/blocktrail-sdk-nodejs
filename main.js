@@ -11,6 +11,7 @@ Object.keys(blocktrail).forEach(function(key) {
  */
 
 APIClient.BlocktrailSDK = APIClient;
+APIClient.Buffer = Buffer;
 APIClient.Wallet = require('./lib/wallet');
 APIClient.BackupGenerator = require('./lib/backup_generator');
 APIClient.Request = require('./lib/request');
