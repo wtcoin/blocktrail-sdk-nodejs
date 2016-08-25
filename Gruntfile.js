@@ -55,7 +55,7 @@ module.exports = function (grunt) {
                     },
                     transform : ['brfs']
                 },
-                src: 'main.js',
+                src: 'main-browser.js',
                 dest: 'build/blocktrail-sdk.js'
             }
         },
