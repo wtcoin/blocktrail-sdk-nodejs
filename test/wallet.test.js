@@ -1202,14 +1202,14 @@ describe('test wallet webhook', function() {
 
                             client.getWebhookEvents(myWebhookIdentifier, function(err, result) {
                                 assert.ifError(err);
-                                assert.ok(_.contains(_.map(result['data'], 'address'), address1));
+                                assert.ok(_.includes(_.map(result['data'], 'address'), address1));
 
                                 wallet.getNewAddress(function(err, address2) {
                                     assert.ifError(err);
 
                                     client.getWebhookEvents(myWebhookIdentifier, function(err, result) {
                                         assert.ifError(err);
-                                        assert.ok(_.contains(_.map(result['data'], 'address'), address2));
+                                        assert.ok(_.includes(_.map(result['data'], 'address'), address2));
 
                                         wallet.deleteWallet(function(err, result) {
                                             assert.ifError(err);
