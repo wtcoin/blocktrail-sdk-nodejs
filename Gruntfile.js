@@ -3,13 +3,13 @@ module.exports = function (grunt) {
     var browsers = [{
         // latest chrome
         browserName: 'googlechrome',
-        platform: 'Linux',
+        platform: 'Windows 10',
         version: 'latest'
     }, {
         // latest chrome as of writing
         browserName: 'googlechrome',
-        platform: 'Linux',
-        version: '48.0'
+        platform: 'Windows 10',
+        version: '54.0'
     }, {
         // latest firefox
         browserName: 'firefox',
