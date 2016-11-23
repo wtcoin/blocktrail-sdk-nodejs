@@ -739,7 +739,7 @@ describe('test wallet, do transaction', function() {
             var tryX = 10;
 
             async.whilst(
-                function() { return tryX-- > 0 && _.unique(changeIdxs).length < 2; },
+                function() { return tryX-- > 0 && _.uniq(changeIdxs).length < 2; },
                 function(cb) {
                     wallet.buildTransaction(pay, function(err, tx, utxos) {
                         assert.ifError(err);
@@ -756,7 +756,7 @@ describe('test wallet, do transaction', function() {
                     });
                 },
                 function() {
-                    assert(_.unique(changeIdxs).length > 1);
+                    assert(_.uniq(changeIdxs).length > 1);
 
                     cb();
                 }
