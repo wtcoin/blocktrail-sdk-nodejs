@@ -61,7 +61,7 @@ module.exports = function (grunt) {
     }, {
         // on FF < 48 there's no crypto.getRandomValues in webworkers
         browserName: 'firefox',
-        platform: 'Linux',
+        platform: 'Windows 10',
         version: '47'
     }];
 
